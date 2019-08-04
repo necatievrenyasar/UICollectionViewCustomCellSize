@@ -85,5 +85,10 @@ class CustomCollectionCell: UICollectionViewCell {
         explainLbl.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10).isActive = true
         explainLbl.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10).isActive = true
         explainLbl.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10).isActive = true
+        
+        //if you use complex view, U can add this
+        /*if let last = contentView.subviews.last {
+            contentView.heightAnchor.constraint(equalTo: last.heightAnchor, constant: 10).isActive = true
+        }*/
     }
 }
